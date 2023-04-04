@@ -4,4 +4,5 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/calyx_fogos.mk \
     $(LOCAL_DIR)/lineage_fogos.mk
