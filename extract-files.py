@@ -17,7 +17,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/motorola/sm7325-common',
+    'vendor/motorola/sm6375-common',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
@@ -44,7 +44,7 @@ extract_fns: extract_fns_user_type = {
 }
 
 module = ExtractUtilsModule(
-    'xpeng',
+    'fogos',
     'motorola',
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,

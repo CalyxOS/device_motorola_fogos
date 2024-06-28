@@ -20,8 +20,8 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Inherit from motorola sm7325-common
-$(call inherit-product, device/motorola/sm7325-common/common.mk)
+# Inherit from motorola sm6375-common
+$(call inherit-product, device/motorola/sm6375-common/common.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xpeng
+    android.hardware.biometrics.fingerprint@2.1-service.fogos
 
 $(foreach f,$(wildcard $(LOCAL_PATH)/configs/idc/*.idc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/usr/idc/$(notdir $f)))
@@ -65,16 +65,16 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 
 # Init (recovery)
 PRODUCT_PACKAGES += \
-    init.recovery.xpeng.rc \
+    init.recovery.fogos.rc \
     load_touch.sh.recovery
 
 # Lineage Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xpeng
+    vendor.lineage.touch@1.0-service.fogos
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xpeng
+    android.hardware.lights-service.fogos
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.xpeng
+    sensors.fogos
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -100,7 +100,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-xpeng-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-xpeng.conf
+    $(LOCAL_PATH)/configs/thermal-engine-fogos-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-fogos.conf
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/xpeng/xpeng-vendor.mk)
+$(call inherit-product, vendor/motorola/fogos/fogos-vendor.mk)
