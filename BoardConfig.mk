@@ -13,7 +13,7 @@ TARGET_BOOTLOADER_BOARD_NAME := fogos
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogos
-TARGET_KERNEL_CONFIG += vendor/fogos_defconfig
+TARGET_KERNEL_CONFIG += vendor/fogos_defconfig vendor/debugfs.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
