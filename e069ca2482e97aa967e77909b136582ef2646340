@@ -16,6 +16,24 @@
       "message": "Is this needed for user builds too? Doesn\u0027t this cause vintf failure?",
       "revId": "e069ca2482e97aa967e77909b136582ef2646340",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6151987a_6074a7af",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2025-02-19T21:08:05Z",
+      "side": 1,
+      "message": "It\u0027s only strictly needed for user builds, it disables debugfs and some other things to fix the vintf failures",
+      "parentUuid": "24cd0343_1ef30664",
+      "revId": "e069ca2482e97aa967e77909b136582ef2646340",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
