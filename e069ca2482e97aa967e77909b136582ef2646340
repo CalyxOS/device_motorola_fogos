@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24cd0343_1ef30664",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-02-19T21:06:50Z",
+      "side": 1,
+      "message": "Is this needed for user builds too? Doesn\u0027t this cause vintf failure?",
+      "revId": "e069ca2482e97aa967e77909b136582ef2646340",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
