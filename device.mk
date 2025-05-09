@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
     FrameworksResDevice \
     FrameworksResDeviceXT2363-8 \
     FrameworksResDeviceXT2363-9 \
-    LineageSystemUIDevice \
+    LineageApertureAppDevice \
     ProductFrameworksResDevice \
     SystemUIResDevice \
     WifiResDevice \
@@ -40,6 +40,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+
+# FM
+TARGET_HAS_FM := true
+
+PRODUCT_PACKAGES += \
+    FM2
 
 # Init
 PRODUCT_PACKAGES += \
@@ -70,10 +76,12 @@ $(foreach DEVICE_SKU, $(DEVICE_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.uicc.xml \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml)
 
-# Sensors
+# Properties
 PRODUCT_PACKAGES += \
-    sensors.fogos
+    hardware.sku.XT2363-8.prop \
+    hardware.sku.XT2363-9.prop
 
+# Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 

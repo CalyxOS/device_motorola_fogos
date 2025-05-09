@@ -23,6 +23,6 @@ PRODUCT_MODEL := moto g34 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="fogos_g-user 14 U1UGS34.23-110-23-6 714d5-d9fb2 release-keys MUR1-0.258" \
-    BuildFingerprint=motorola/fogos_g/fogos:14/U1UGS34.23-110-23-6/714d5-d9fb2:user/release-keys \
+    BuildDesc="fogos_g-user 15 V1UG35H.75-14-3 6c77f4-ac72a9 release-keys MV-186" \
+    BuildFingerprint=motorola/fogos_g/fogos:15/V1UG35H.75-14-3/6c77f4-ac72a9:user/release-keys \
     DeviceProduct=fogos_g
