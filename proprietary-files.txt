@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from fogos_g V1UGS35H.75-14-3-3
+# All unpinned blobs are extracted from fogos_g V1UGS35H.75-14-13-1
 
 # ACDB Data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -330,7 +330,7 @@ vendor/etc/thermal-engine.conf
 # Touchscreen firmware
 vendor/firmware/ILITEK_FW
 vendor/firmware/chipone_firmware.bin
-vendor/firmware/csot_focal_test_limits.ini
-vendor/firmware/focaltech-csot-ft3681-22-0000-fogos.bin:vendor/firmware/focaltech_ts_fw_csot.bin
-vendor/firmware/goodix-tm-gt9916S-23051702-646483c4-fogos.bin
-vendor/firmware/tm_goodix_cfg_group.bin
+
+# Touchscreen firmware (recovery)
+vendor/firmware/ILITEK_FW:recovery/root/vendor/firmware/ILITEK_FW
+vendor/firmware/chipone_firmware.bin:recovery/root/vendor/firmware/chipone_firmware.bin
